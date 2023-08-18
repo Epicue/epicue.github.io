@@ -1102,7 +1102,7 @@ a {
   height: 400px;
   object-fit: cover;
   object-position: 50% 30%;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .member-designation {
