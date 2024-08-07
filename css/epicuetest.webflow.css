@@ -1,3 +1,9 @@
+:root {
+  --relume-library-lite-rl-black: black;
+  --relume-library-lite-rl-white: white;
+  --light-salmon: #ff9166;
+}
+
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
@@ -48,12 +54,12 @@ a {
 }
 
 .rl_navbar1_button {
-  color: #fff;
+  border: 1px solid var(--relume-library-lite-rl-black);
+  background-color: var(--relume-library-lite-rl-black);
+  color: var(--relume-library-lite-rl-white);
   text-align: center;
-  background-color: #000;
-  border: 1px solid #000;
   padding: .5rem 1.25rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -61,12 +67,12 @@ a {
 }
 
 .rl_navbar1_button-secondary {
-  color: #000;
+  border: 1px solid var(--relume-library-lite-rl-black);
+  color: var(--relume-library-lite-rl-black);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #000;
+  background-color: #0000;
   padding: .5rem 1.25rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -87,7 +93,7 @@ a {
 .rl_navbar1_dropdown-link {
   color: #000;
   padding: .5rem 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -104,11 +110,11 @@ a {
 }
 
 .rl-dropdown-icon {
-  width: 1rem;
-  height: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 1rem;
+  height: 1rem;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 1rem;
@@ -120,19 +126,19 @@ a {
 }
 
 .rl_navbar1_dropdown-toggle {
-  color: #000;
+  color: var(--relume-library-lite-rl-black);
   padding: .5rem 2.5rem .5rem 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .rl_navbar1_link {
-  color: #000;
-  background-color: rgba(0, 0, 0, 0);
+  color: var(--relume-library-lite-rl-black);
+  background-color: #0000;
   padding: .5rem 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -154,22 +160,22 @@ a {
 }
 
 .rl_navbar1_container {
-  width: 100%;
-  height: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
 }
 
 .rl_navbar1_component {
+  border-bottom: 1px solid var(--relume-library-lite-rl-black);
+  background-color: var(--relume-library-lite-rl-white);
+  align-items: center;
   width: 100%;
   height: auto;
   min-height: 4.5rem;
-  background-color: #fff;
-  border-bottom: 1px solid #000;
-  align-items: center;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
@@ -178,9 +184,9 @@ a {
 
 .navbar-no-shadow-container {
   z-index: 5;
+  background-color: #0000;
   width: 100%;
   max-width: 1140px;
-  background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -221,7 +227,7 @@ a {
 }
 
 .nav-link:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #1a1b1fbf;
 }
 
 .nav-link:focus-visible {
@@ -251,7 +257,7 @@ a {
 }
 
 .nav-dropdown-toggle:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #1a1b1fbf;
 }
 
 .nav-dropdown-toggle:focus-visible {
@@ -336,33 +342,33 @@ a {
 }
 
 .nav {
+  background-color: #f39595;
+  align-items: center;
   width: 100%;
   height: 80px;
   min-height: auto;
-  background-color: #f39595;
-  align-items: center;
   margin-left: 0;
   display: block;
   position: fixed;
 }
 
 .container {
-  height: 100%;
-  max-height: none;
-  max-width: none;
-  min-height: auto;
   flex-direction: row;
   align-items: center;
+  max-width: none;
+  height: 100%;
+  min-height: auto;
+  max-height: none;
   margin-left: 40px;
   margin-right: 40px;
   display: block;
 }
 
 .brand {
-  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
@@ -386,7 +392,6 @@ a {
 }
 
 .container-3 {
-  width: 1020px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: auto auto;
@@ -394,6 +399,7 @@ a {
   grid-auto-columns: 1fr;
   justify-content: flex-start;
   align-items: center;
+  width: 1020px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -409,16 +415,17 @@ a {
 }
 
 .hero {
-  height: 100vh;
   background-color: #060606;
+  height: 100vh;
   padding-top: 0;
+  overflow: hidden;
 }
 
 .container-4 {
-  width: auto;
-  height: 100%;
-  max-width: none;
   align-items: center;
+  width: auto;
+  max-width: none;
+  height: 100%;
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
@@ -461,16 +468,17 @@ a {
 }
 
 .nav_main {
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   position: fixed;
+  overflow: hidden;
 }
 
 .navbar-logo-left-container {
   z-index: 5;
+  background-color: #0000;
   width: 1030px;
   max-width: 100%;
-  background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
   margin-right: auto;
   padding: 15px 20px;
@@ -500,9 +508,9 @@ a {
 }
 
 .nav-divider {
+  background-color: #e4ebf3;
   width: 1px;
   height: 22px;
-  background-color: #e4ebf3;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -520,7 +528,7 @@ a {
 }
 
 .nav-link-accent:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #1a1b1fbf;
 }
 
 .mobile-margin-top-11 {
@@ -564,7 +572,7 @@ a {
 }
 
 .menu_item:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #1a1b1fbf;
 }
 
 .menu_item:focus-visible {
@@ -582,12 +590,12 @@ a {
 }
 
 .hero-content {
-  width: 74%;
-  height: 100%;
-  max-width: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 74%;
+  max-width: none;
+  height: 100%;
   margin-top: 0;
   display: flex;
   position: relative;
@@ -598,12 +606,12 @@ a {
 }
 
 .hero-header {
-  width: 750px;
   color: #dbdbdb;
   text-align: left;
   letter-spacing: -2px;
   text-transform: lowercase;
   column-count: auto;
+  width: 750px;
   font-family: Satoshi Bold, sans-serif;
   font-size: 180px;
   line-height: 160px;
@@ -613,44 +621,39 @@ a {
 
 .image {
   z-index: 0;
+  opacity: 1;
   width: 500px;
   max-width: none;
-  opacity: 1;
   margin-top: 0;
   position: absolute;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: 0%;
+  inset: auto 0% auto auto;
 }
 
 .industry-loss {
-  height: 100vh;
   background-color: #d6d6d6;
-  background-image: linear-gradient(rgba(12, 4, 2, .67), rgba(12, 4, 2, .67)), url('../images/facts-background.jpg');
+  background-image: linear-gradient(#0c0402ab, #0c0402ab), url('../images/facts-background.jpg');
   background-position: 0 0, 0%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
   justify-content: center;
+  height: 100vh;
   display: none;
   position: relative;
+  overflow: hidden;
 }
 
 .button {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #fff0;
 }
 
 .link-block-2 {
-  width: auto;
   justify-content: center;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   position: absolute;
-  top: auto;
-  bottom: 8%;
-  left: auto;
-  right: auto;
+  inset: auto auto 8%;
 }
 
 .image-2 {
@@ -690,27 +693,24 @@ a {
 }
 
 .hero-section-scroll-bottom {
-  width: 100%;
-  max-width: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: none;
   display: flex;
   position: absolute;
-  top: auto;
-  bottom: 10%;
-  left: 0%;
-  right: 0%;
+  inset: auto 0% 10%;
 }
 
 .container-10 {
   z-index: 1;
-  width: 80%;
-  height: auto;
-  max-width: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 80%;
+  max-width: none;
+  height: auto;
   margin-top: 20vh;
   margin-bottom: 20vh;
   display: flex;
@@ -725,14 +725,14 @@ a {
 }
 
 .flex-block-4 {
-  width: auto;
-  max-width: 370px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   object-fit: fill;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  width: auto;
+  max-width: 370px;
   margin-top: 40px;
 }
 
@@ -747,10 +747,10 @@ a {
 }
 
 .statistext-text-double {
-  width: 350px;
   color: #fff;
   text-align: center;
   justify-content: center;
+  width: 350px;
   margin-bottom: 10px;
   font-family: Satoshi Medium, sans-serif;
   font-size: 20px;
@@ -802,8 +802,8 @@ a {
 }
 
 .flex-block-5 {
-  width: 100%;
   align-items: center;
+  width: 100%;
   position: static;
   right: 0;
 }
@@ -815,16 +815,17 @@ a {
 }
 
 .construction-deaths {
-  height: 100vh;
   background-color: #d6d6d6;
-  background-image: linear-gradient(rgba(0, 0, 0, .88), rgba(0, 0, 0, .88)), url('../images/deaths-background.jpg');
+  background-image: linear-gradient(#000000e0, #000000e0), url('../images/deaths-background.jpg');
   background-position: 0 0, 0%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .cell-4, .cell-5, .cell-6 {
@@ -833,14 +834,14 @@ a {
 }
 
 .text-span {
-  color: #ff9166;
+  color: var(--light-salmon);
   font-family: Satoshi Bold, sans-serif;
 }
 
 .hero-subheader {
-  width: 800px;
   color: #dadada;
   text-align: left;
+  width: 800px;
   margin-top: 10px;
   font-family: Satoshi Italic, sans-serif;
   font-size: 18px;
@@ -849,14 +850,14 @@ a {
 }
 
 .text-span-2 {
-  color: #ff9166;
+  color: var(--light-salmon);
 }
 
 .statistext-text-single {
-  width: 100%;
   color: #fff;
   text-align: center;
   justify-content: center;
+  width: 100%;
   margin-bottom: 10px;
   font-family: Satoshi Medium, sans-serif;
   font-size: 20px;
@@ -865,21 +866,18 @@ a {
 }
 
 .text-span-3 {
-  color: #ff9166;
+  color: var(--light-salmon);
 }
 
 .section-scroll-bottom {
-  width: 100%;
-  max-width: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: none;
   display: flex;
   position: absolute;
-  top: auto;
-  bottom: 10%;
-  left: 0%;
-  right: 0%;
+  inset: auto 0% 10%;
 }
 
 .link-block-3 {
@@ -890,9 +888,9 @@ a {
 }
 
 .hero-scroll-cta {
-  width: auto;
   color: #dbdbdb;
   text-align: center;
+  width: auto;
   margin-top: auto;
   margin-bottom: 0;
   font-family: Satoshi Medium, sans-serif;
@@ -903,36 +901,30 @@ a {
 
 .section-scroll-top {
   z-index: 1;
-  width: 100%;
-  max-width: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: none;
   display: flex;
   position: absolute;
-  top: 10%;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
+  inset: 10% 0% auto;
 }
 
 .div-block-2 {
+  opacity: 1;
+  background-color: #ff646400;
+  background-image: radial-gradient(circle closest-corner at 50% 0, #792b0a29, #fff0);
   width: 100%;
   height: 100%;
-  opacity: 1;
-  background-color: rgba(255, 100, 100, 0);
-  background-image: radial-gradient(circle closest-corner at 50% 0, rgba(121, 43, 10, .16), rgba(255, 255, 255, 0));
   position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  inset: 0%;
 }
 
 .action-statement-subheader {
-  width: 560px;
   color: #fff;
   text-align: left;
+  width: 560px;
   margin-top: 50px;
   font-family: Satoshi Bold, sans-serif;
   font-size: 50px;
@@ -954,31 +946,32 @@ a {
 }
 
 .narrative {
-  height: 100vh;
   background-image: url('../images/epicue-semiotics2.jpg');
   background-position: 80%;
   background-size: cover;
   justify-content: center;
   align-items: flex-start;
+  height: 100vh;
   margin-top: 0;
   padding-top: 12%;
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 .container-11 {
-  width: 80%;
-  max-width: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 80%;
+  max-width: none;
   display: flex;
 }
 
 .action-statement {
-  width: 540px;
   color: #fff;
   text-align: left;
+  width: 540px;
   font-family: Satoshi Regular, sans-serif;
   font-size: 32px;
   line-height: 40px;
@@ -986,26 +979,27 @@ a {
 }
 
 .text-span-4 {
-  color: #ff9166;
+  color: var(--light-salmon);
 }
 
 .epicue {
-  height: 100vh;
   background-image: url('../images/epicue-product.jpg');
   background-position: 50% 100%;
   background-size: cover;
   justify-content: center;
   align-items: flex-start;
+  height: 100vh;
   margin-top: 0;
   padding-top: 12%;
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 .product-statement {
-  width: 100%;
   color: #fff;
   text-align: center;
+  width: 100%;
   font-family: Satoshi Bold, sans-serif;
   font-size: 30px;
   line-height: 40px;
@@ -1013,11 +1007,12 @@ a {
 }
 
 .footer {
-  height: 80px;
   background-color: #000;
   justify-content: center;
   align-items: center;
+  height: 80px;
   display: flex;
+  overflow: hidden;
 }
 
 .text-block-3 {
@@ -1026,19 +1021,20 @@ a {
 }
 
 .contact {
-  height: 90vh;
   color: #060606;
   background-color: #060606;
+  height: 90vh;
   position: relative;
+  overflow: hidden;
 }
 
 .contact-container {
-  width: 70%;
-  height: 100%;
-  max-width: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 70%;
+  max-width: none;
+  height: 100%;
   margin-top: 0;
   padding-top: 140px;
   display: flex;
@@ -1056,10 +1052,10 @@ a {
 }
 
 .team-section {
-  height: auto;
   background-color: #060606;
   justify-content: flex-start;
   align-items: flex-start;
+  height: auto;
   padding-top: 20vh;
   padding-bottom: 20vh;
   display: block;
@@ -1098,10 +1094,10 @@ a {
 }
 
 .team-image {
-  width: 100%;
-  height: 400px;
   object-fit: cover;
   object-position: 50% 30%;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -1146,9 +1142,9 @@ a {
 }
 
 .section-subheader {
-  width: 490px;
   color: #fff;
   text-align: left;
+  width: 490px;
   font-family: Satoshi Regular, sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -1162,8 +1158,8 @@ a {
 }
 
 .contact-address {
-  width: 220px;
   color: #fff;
+  width: 220px;
   font-family: Satoshi Light, sans-serif;
   font-size: 28px;
   line-height: 33px;
@@ -1199,7 +1195,7 @@ a {
 }
 
 .email {
-  color: #ff9166;
+  color: var(--light-salmon);
   font-family: Satoshi Medium, sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -1233,11 +1229,48 @@ a {
   margin-left: 20px;
 }
 
+.spline-scene {
+  z-index: 2;
+  flex: 1;
+  order: 0;
+  justify-content: flex-end;
+  align-self: auto;
+  width: 100%;
+  height: 100vh;
+  padding-left: 13%;
+  display: flex;
+  position: absolute;
+  inset: 0% 0% 0% 0;
+}
+
+.utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+}
+
+.utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  width: 260px;
+  display: flex;
+}
+
+.utility-page-form {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .rl_menu-icon_line-bottom {
+    background-color: #000;
     width: 24px;
     height: 2px;
-    background-color: #000;
     padding-bottom: 0;
     padding-right: 0;
   }
@@ -1250,11 +1283,11 @@ a {
   }
 
   .rl_menu-icon_line-middle {
-    width: 24px;
-    height: 2px;
     background-color: #000;
     justify-content: center;
     align-items: center;
+    width: 24px;
+    height: 2px;
     margin-top: 6px;
     margin-bottom: 6px;
     padding-bottom: 0;
@@ -1263,19 +1296,19 @@ a {
   }
 
   .rl_menu-icon_line-top {
+    background-color: #000;
     width: 24px;
     height: 2px;
-    background-color: #000;
     padding-bottom: 0;
     padding-right: 0;
   }
 
   .rl_menu-icon {
-    width: 48px;
-    height: 48px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 48px;
+    height: 48px;
     margin-right: -.5rem;
     padding-bottom: 0;
     padding-right: 0;
@@ -1283,7 +1316,7 @@ a {
   }
 
   .rl_navbar1_menu-button.w--open {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #0000;
   }
 
   .rl_navbar1_menu-buttons {
@@ -1314,10 +1347,7 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: 0%;
+    inset: auto 0% auto auto;
   }
 
   .rl_navbar1_dropdown-toggle {
@@ -1355,7 +1385,7 @@ a {
   }
 
   .nav-menu-wrapper {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #0000;
   }
 
   .nav-menu {
@@ -1387,7 +1417,11 @@ a {
 
   .menu-button.w--open {
     color: #fff;
-    background-color: rgba(166, 177, 191, 0);
+    background-color: #a6b1bf00;
+  }
+
+  .hero {
+    overflow: hidden;
   }
 
   .navbar-logo-left-container.shadow-three {
@@ -1409,7 +1443,7 @@ a {
     margin-top: 10px;
     padding: 20px 50px 20px 100px;
     display: flex;
-    box-shadow: 0 8px 50px rgba(0, 0, 0, .05);
+    box-shadow: 0 8px 50px #0000000d;
   }
 
   .menu_item {
@@ -1435,10 +1469,7 @@ a {
 
   .image {
     width: 400px;
-    top: auto;
-    bottom: 72px;
-    left: auto;
-    right: 0%;
+    inset: auto 0% 72px auto;
   }
 
   .hero-section-scroll-bottom {
@@ -1492,6 +1523,21 @@ a {
   .team-image {
     height: 300px;
   }
+
+  .spline-scene {
+    width: 120vw;
+    padding-left: 0%;
+    top: 11%;
+    left: -10%;
+  }
+
+  .div-block-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0% auto auto 0%;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1532,7 +1578,7 @@ a {
   }
 
   .nav-dropdown-list.shadow-three {
-    box-shadow: 0 8px 50px rgba(0, 0, 0, .05);
+    box-shadow: 0 8px 50px #0000000d;
   }
 
   .nav-dropdown-list.shadow-three.w--open {
@@ -1563,8 +1609,8 @@ a {
 
   .nav-divider {
     width: 200px;
-    height: 1px;
     max-width: 100%;
+    height: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -1585,6 +1631,14 @@ a {
     padding-bottom: 10px;
     display: inline-block;
   }
+
+  .spline-scene {
+    object-fit: fill;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1601,7 +1655,7 @@ a {
   }
 
   .menu-button.w--open {
-    background-color: rgba(166, 177, 191, 0);
+    background-color: #a6b1bf00;
   }
 
   .navbar-logo-left-container.shadow-three {
@@ -1627,8 +1681,8 @@ a {
   }
 
   .hero-content {
-    width: 90%;
     justify-content: flex-start;
+    width: 90%;
   }
 
   .hero-header {
@@ -1643,10 +1697,7 @@ a {
     width: 280px;
     margin-left: auto;
     margin-right: auto;
-    top: auto;
-    bottom: 14%;
-    left: 0%;
-    right: 0%;
+    inset: auto 0% 14%;
   }
 
   .hero-section-scroll-bottom {
@@ -1654,7 +1705,6 @@ a {
   }
 
   .container-10 {
-    width: 90%;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     flex-direction: column;
@@ -1663,6 +1713,7 @@ a {
     grid-auto-columns: 1fr;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
     margin-top: 10vh;
     margin-bottom: 10vh;
     padding-top: 20px;
@@ -1747,8 +1798,8 @@ a {
   }
 
   .contact-container {
-    width: 90%;
     align-items: center;
+    width: 90%;
     padding-top: 80px;
   }
 
@@ -1836,6 +1887,15 @@ a {
   .main-contact-text {
     object-fit: fill;
     display: block;
+  }
+
+  .spline-scene {
+    justify-content: center;
+    align-items: stretch;
+    width: 200vw;
+    display: flex;
+    top: 10%;
+    left: -79%;
   }
 }
 
